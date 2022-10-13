@@ -75,13 +75,15 @@
                 </section>
                 
                 <section class="todo-app__lower-actions-bar">
-                    <span>n items left<span>
                     <div class="todo-app__filters-bar">
-                        <input type="radio" name="action" value="All">
+                        <span>n items left<span>
+                        <input type="radio" name="action" value="All"
+                        aria-label="filter_show_all_tasks">
                         <span class="action_text">All</span>
-                        <input type="radio" name="action" value="Active">
+                        <input type="radio" name="action" value="Active"
+                        aria-label="filter_show_active_tasks">
                         <span class="action_text">Active</span>
-                        <input type="radio" name="action" value="Completed">
+                        <input type="radio" name="action" value="Completed" aria-label="filter_show_completed_tasks">
                         <span class="action_text">Completed</span>
                     </div>
                     <button>Clear completed</button>
