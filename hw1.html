@@ -75,18 +75,32 @@
                 </section>
                 
                 <section class="todo-app__lower-actions-bar">
-                    <div class="todo-app__filters-bar">
-                        <span>n items left<span>
-                        <input type="radio" name="action" value="All"
-                        aria-label="filter_show_all_tasks">
-                        <span class="action_text">All</span>
-                        <input type="radio" name="action" value="Active"
+                    <span class="text_amount_left_tasks" aria-label="text_amount_left_tasks">3 items left<span>
+                    <div class="todo-app__filters-bar" role="navigation" aria-label="actions_bar">
+                        <input 
+                        type="radio" 
+                        id="All" 
+                        name="action"
+                        value="All"
+                        aria-label="filter_show_all_tasks" 
+                        checked>
+                        <label for="All">All</label>
+                        <input 
+                        type="radio"
+                        id="Active" 
+                        name="action" 
+                        value="Active"
                         aria-label="filter_show_active_tasks">
-                        <span class="action_text">Active</span>
-                        <input type="radio" name="action" value="Completed" aria-label="filter_show_completed_tasks">
-                        <span class="action_text">Completed</span>
+                        <label for="Active">Active</label>
+                        <input 
+                        type="radio"
+                        id="Completed"
+                        name="action" 
+                        value="Completed"
+                        aria-label="filter_show_completed_tasks">
+                        <label for="Completed">Completed</label>
                     </div>
-                    <button>Clear completed</button>
+                    <button aria-label="action_clear_completed">Clear completed</button>
                 </section>
             </main>
       
