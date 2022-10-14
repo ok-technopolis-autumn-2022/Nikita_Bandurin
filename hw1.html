@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>TODOS</title>
+    </head>
+    <body>
+        <div class = "todo-app">
+
+            <header class="todo-app__header">
+                <h1>TODOS</h1>
+            </header>
+            <main class="todo-app__frame">
+                <section class="todo-app__main-controls">
+                    <button class="show_hide_tasks">view tasks</button>
+                    <input type = "text" 
+                    placeholder="What needs to be done"
+                    class="text_new_task" 
+                    aria-label="text_of_new_task">
+                </section>
+
+                <section class="todo-app__tasks">
+                    <ul class="todo-app__tasks-list">
+                        <li class="todo-app__task-item">
+                            <div class="task-item__view">
+                                <input 
+                                type="checkbox"
+                                class="task-item__status"
+                                aria-label="Completed task: HTML">
+                                <span class="task-item__text">HTML</span>
+                                <button class="task-item__delete">Delete task</button>
+                            </div>
+                            <div class="task-item__edit" hidden="hidden">
+                                <input
+                                type="text"
+                                class="task-item__input"
+                                value="HTML"
+                                aria-label="Edit task: HTML">
+                            </div>
+                        </li>
+
+                        <li class="todo-app__task-item">
+                            <div class="task-item__view">
+                                <input 
+                                type="checkbox"
+                                class="task-item__status"
+                                aria-label="Completed task: CSS">
+                                <span class="task-item__text">CSS</span>
+                                <button class="task-item__delete">Delete task</button>
+                            </div>
+                            <div class="task-item__edit" hidden="hidden">
+                                <input
+                                type="text"
+                                class="task-item__input"
+                                value="CSS"
+                                aria-label="Edit task: CSS">
+                            </div>
+                        </li>
+
+                        <li class="todo-app__task-item">
+                            <div class="task-item__view">
+                                <input 
+                                type="checkbox"
+                                class="task-item__status"
+                                aria-label="Completed task: JS">
+                                <span class="task-item__text">JS</span>
+                                <button class="task-item__delete">Delete task</button>
+                            </div>
+                            <div class="task-item__edit" hidden="hidden">
+                                <input
+                                type="text"
+                                class="task-item__input"
+                                value="JS"
+                                aria-label="Edit task: JS">
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="todo-app__lower-actions-bar">
+                    <span class="text_amount_left_tasks" aria-label="text_amount_left_tasks">3 items left<span>
+                    <div class="todo-app__filters-bar" role="navigation" aria-label="actions_bar">
+                        <input 
+                        type="radio" 
+                        id="All" 
+                        name="action"
+                        value="All"
+                        aria-label="filter_show_all_tasks" 
+                        checked>
+                        <label for="All">All</label>
+                        <input 
+                        type="radio"
+                        id="Active" 
+                        name="action" 
+                        value="Active"
+                        aria-label="filter_show_active_tasks">
+                        <label for="Active">Active</label>
+                        <input 
+                        type="radio"
+                        id="Completed"
+                        name="action" 
+                        value="Completed"
+                        aria-label="filter_show_completed_tasks">
+                        <label for="Completed">Completed</label>
+                    </div>
+                    <button aria-label="action_clear_completed">Clear completed</button>
+                </section>
+            </main>
+      
+         </div>
+    </body>
+</html>
