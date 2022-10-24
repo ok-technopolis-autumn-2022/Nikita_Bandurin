@@ -1,0 +1,131 @@
+ /*заняли полную высоту для html */
+html {
+    height: 100%;
+} 
+
+
+/* заняли полную высоту для body, унаследовав ее от html */
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app {
+    width: 56%;
+    height: 44%;
+    max-width: 560px;
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-app__header {
+    width: auto;
+    font-size: 20px;
+    text-transform: lowercase;
+    text-align: center;
+    margin: 0;
+}
+
+.header-title {
+    margin: 0;
+}
+
+.todo-app__frame {
+    background-color: #fff;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 2px  #f2f2f2 solid ;
+}
+
+.todo-app__main-controls {
+    flex-grow: 2;
+    display: flex;
+    border-bottom: 2px  #f2f2f2 solid ;
+    flex-direction: row;
+}
+
+.todo-app__tasks {
+    flex-grow: 10;
+    height: 100%;
+}
+
+.todo-app__lower-actions-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    border-top: 2px  #f2f2f2 solid ;
+}
+
+.show_hide_tasks, .text_new_task {
+    margin: 0;
+    border: 0;
+    background-color: #fff;
+}
+
+.text_new_task {
+    width: 100%;
+}
+
+.todo-app__tasks-list {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* а что будет если не 5 элементов, тогда height 100/5 не сработает.. */
+li {
+    overflow: scroll;
+    height: 20%;
+    border-bottom: 2px  #f2f2f2 solid ;
+}
+
+.task-item__view {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.task-item__status {
+    flex-grow: 0;
+}
+
+.task-item__text {
+    flex-grow: 10;
+}
+
+.task-item__delete {
+    flex-grow: 0;
+}
+
+.todo-app__clear-button {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-right: 2px;
+    background-color: #fff;
+    color: #888;
+}
+
+.text_amount_left_tasks {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-left: 2px;
+    color: #888;
+}
+
+.todo-app__filters-bar {
+    margin: 0;
+    border: 0;
+    color: #888;
+    display: flex;
+}

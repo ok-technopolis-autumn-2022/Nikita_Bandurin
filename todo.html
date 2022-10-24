@@ -3,13 +3,15 @@
     <head>
         <meta charset = "UTF-8">
         <title>TODOS</title>
+        <link rel="stylesheet" href="todo_style.css">
     </head>
     <body>
         <div class = "todo-app">
 
             <header class="todo-app__header">
-                <h1>TODOS</h1>
+                <h1 class="header-title">TODOS</h1>
             </header>
+
             <main class="todo-app__frame">
                 <section class="todo-app__main-controls">
                     <button class="show_hide_tasks">view tasks</button>
@@ -74,11 +76,28 @@
                                 aria-label="Edit task: JS">
                             </div>
                         </li>
+                        <li class="todo-app__task-item">
+                            <div class="task-item__view">
+                                <input 
+                                type="checkbox"
+                                class="task-item__status"
+                                aria-label="Completed task: JS">
+                                <span class="task-item__text">JS</span>
+                                <button class="task-item__delete">Delete task</button>
+                            </div>
+                            <div class="task-item__edit" hidden="hidden">
+                                <input
+                                type="text"
+                                class="task-item__input"
+                                value="JS"
+                                aria-label="Edit task: JS">
+                            </div>
+                        </li>
                     </ul>
                 </section>
                 
                 <section class="todo-app__lower-actions-bar">
-                    <span class="text_amount_left_tasks" aria-label="text_amount_left_tasks">3 items left<span>
+                    <span class="text_amount_left_tasks" aria-label="text_amount_left_tasks">3 items left</span>
                     <div class="todo-app__filters-bar" role="navigation" aria-label="actions_bar">
                         <input 
                         type="radio" 
@@ -103,7 +122,7 @@
                         aria-label="filter_show_completed_tasks">
                         <label for="Completed">Completed</label>
                     </div>
-                    <button aria-label="action_clear_completed">Clear completed</button>
+                    <button class="todo-app__clear-button">Clear completed</button>
                 </section>
             </main>
       
