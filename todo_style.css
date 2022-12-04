@@ -72,9 +72,11 @@ body {
 }
 
 .task-item__status:checked+.task-item__status-icon {
-    /* bg img */
-    border-color: #52dec5;
+    background-image: url(../Nikita_Bandurin/img/completed.png);
     background-repeat: no-repeat;
+    background-size: 62%;
+    border-color: #52dec5;
+    background-position: 7px 8px;
 }
 
 .task-item__status {
@@ -99,6 +101,16 @@ body {
     margin: 0;
     border: 0;
     background-color: #fff;
+}
+
+.show_hide_tasks {
+    height: 64px;
+    width: 70px;
+    text-indent: -999px;
+    background-position: 21px 28px;
+    background-size: 40%;
+    background-image: url(../Nikita_Bandurin/img/select-all.png);
+    background-repeat: no-repeat;
 }
 
 .text_new_task {
