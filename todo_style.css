@@ -7,6 +7,7 @@ html {
 /* заняли полную высоту для body, унаследовав ее от html */
 body {
     background-color: #f2f2f2;
+    font-family: Roboto,Arial,sans-serif;
     display: flex;
     height: 100%;
     align-items: center;
@@ -34,6 +35,8 @@ body {
 .header-title {
     margin: 0;
 }
+
+
 
 .todo-app__frame {
     background-color: #fff;
@@ -68,9 +71,17 @@ body {
     font-size: 14px;
 }
 
-.task-item__status-input:checked+.task-item__status-icon {
-    background-position: 6px 8px;
+.task-item__status:checked+.task-item__status-icon {
+    /* bg img */
+    border-color: #52dec5;
     background-repeat: no-repeat;
+}
+
+.task-item__status {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 -70px;
 }
 
 .task-item__status-icon {
@@ -82,7 +93,7 @@ body {
     border: 1px solid #e6e6e6;
     border-radius: 50%;
     background-color: #fff;
-    }
+}
 
 .show_hide_tasks, .text_new_task {
     margin: 0;
