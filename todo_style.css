@@ -14,8 +14,7 @@ body {
 }
 
 .todo-app {
-    width: 56%;
-    height: 44%;
+    width: 70%;
     max-width: 560px;
     min-width: 300px;
     min-height: 300px;
@@ -41,16 +40,20 @@ body {
     height: 90%;
     display: flex;
     flex-direction: column;
-    border: 2px  #f2f2f2 solid ;
+    border: 1.4px  #f2f2f2 solid ;
 }
 
 .todo-app__main-controls {
+    min-height: 64px;
     flex-grow: 2;
     display: flex;
-    border-bottom: 2px  #f2f2f2 solid ;
+    border-bottom: 1.4px  #f2f2f2 solid ;
     flex-direction: row;
 }
 
+.text_new_task {
+    font-size: 23px;
+}
 .todo-app__tasks {
     flex-grow: 10;
     height: 100%;
@@ -58,7 +61,7 @@ body {
 
 .todo-app__lower-actions-bar {
     flex-grow: 1;
-    height: 43px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,7 +88,7 @@ body {
 
 li {
     min-height: 64px;
-    border-bottom: 2px  #f2f2f2 solid ;
+    border-bottom: 1.4px  #f2f2f2 solid ;
 }
 
 .task-item__view {
@@ -101,20 +104,46 @@ li {
 
 .task-item__text {
     flex-grow: 10;
-    min-height: 44px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 23px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .task-item__delete {
     flex-grow: 1;
+    width: 36px;
+    height: 36px;
+    margin: -999px 4px 0 8px;
+    text-indent: -999px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+}
+
+.task-item__delete:focus, .task-item__view:hover .task-item__delete {
+    margin-top: 0;
+}
+
+.button-low-filters-bar {
+    display: none;
+}
+
+.filter-task-text {
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.button-low-filters-bar:checked + .filter-task-text {
+    border-color: #ebdfdf;
 }
 
 .todo-app__clear-button {
     margin: 0;
     border: 0;
     padding: 0;
-    padding-right: 2px;
+    padding-right: 4px;
     background-color: #fff;
     color: #888;
 }
@@ -123,7 +152,7 @@ li {
     margin: 0;
     border: 0;
     padding: 0;
-    padding-left: 2px;
+    padding-left: 4px;
     color: #888;
 }
 

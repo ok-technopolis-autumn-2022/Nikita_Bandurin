@@ -101,28 +101,37 @@
                 <section class="todo-app__lower-actions-bar">
                     <span class="text_amount_left_tasks" aria-label="text_amount_left_tasks">3 items left</span>
                     <div class="todo-app__filters-bar" role="navigation" aria-label="actions_bar">
+                        <label class="task-item-filter">
+                            <input
+                            class="button-low-filters-bar"
+                            type="radio" 
+                            id="All" 
+                            name="action"
+                            value="All"
+                            aria-label="filter_show_all_tasks" 
+                            checked>
+                            <span class="filter-task-text" aria-label="filter all tasks">All</span> 
+                        </label>
+                        <label class="task-item-filter">
                         <input 
-                        type="radio" 
-                        id="All" 
-                        name="action"
-                        value="All"
-                        aria-label="filter_show_all_tasks" 
-                        checked>
-                        <label for="All">All</label>
-                        <input 
+                        class="button-low-filters-bar"
                         type="radio"
                         id="Active" 
                         name="action" 
                         value="Active"
                         aria-label="filter_show_active_tasks">
-                        <label for="Active">Active</label>
+                        <span class="filter-task-text" aria-label="filter active tasks">Active</span> 
+                        </label>
+                        <label class="task-item-filter">
                         <input 
+                        class="button-low-filters-bar"
                         type="radio"
                         id="Completed"
                         name="action" 
                         value="Completed"
                         aria-label="filter_show_completed_tasks">
-                        <label for="Completed">Completed</label>
+                        <span class="filter-task-text" aria-label="filter completed tasks">Completed</span> 
+                        </label>
                     </div>
                     <button class="todo-app__clear-button">Clear completed</button>
                 </section>
