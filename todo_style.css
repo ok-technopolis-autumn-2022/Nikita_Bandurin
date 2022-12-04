@@ -68,6 +68,22 @@ body {
     font-size: 14px;
 }
 
+.task-item__status-input:checked+.task-item__status-icon {
+    background-position: 6px 8px;
+    background-repeat: no-repeat;
+}
+
+.task-item__status-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    margin: 0 12px 0 22px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    background-color: #fff;
+    }
+
 .show_hide_tasks, .text_new_task {
     margin: 0;
     border: 0;
@@ -77,6 +93,10 @@ body {
 .text_new_task {
     width: 100%;
 }
+
+.task-item__view:hover {
+    background-color: #fafafa;
+    }
 
 .todo-app__tasks-list {
     margin: 0;
@@ -115,7 +135,6 @@ li {
     height: 36px;
     margin: -999px 4px 0 8px;
     text-indent: -999px;
-    background-image: url();
     background-repeat: no-repeat;
     background-position: 50%;
 
