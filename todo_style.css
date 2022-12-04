@@ -153,14 +153,15 @@ li {
 }
 
 .task-item__delete {
-    flex-grow: 1;
     width: 36px;
     height: 36px;
-    margin: -999px 4px 0 8px;
+    margin: -999px 0px 0 0px;
+    padding: 0;
     text-indent: -999px;
+    background-image: url(..//Nikita_Bandurin/img/close.png);
     background-repeat: no-repeat;
-    background-position: 50%;
-
+    background-size: 50%;
+    background-position: center;
 }
 
 .task-item__delete:focus, .task-item__view:hover .task-item__delete {
@@ -203,4 +204,9 @@ li {
     border: 0;
     color: #888;
     display: flex;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
 }
