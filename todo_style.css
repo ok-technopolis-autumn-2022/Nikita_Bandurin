@@ -7,7 +7,7 @@ html {
 /* заняли полную высоту для body, унаследовав ее от html */
 body {
     background-color: #f2f2f2;
-    font-family: Roboto,Arial,sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     display: flex;
     height: 100%;
     align-items: center;
@@ -136,6 +136,7 @@ li {
 
 .task-item__view {
     min-height: 64px;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     align-items: center;
