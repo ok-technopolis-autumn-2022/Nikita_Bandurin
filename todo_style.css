@@ -72,7 +72,7 @@ body {
 }
 
 .task-item__status:checked+.task-item__status-icon {
-    background-image: url(../Nikita_Bandurin/img/completed.png);
+    background-image: url(./img/completed.png);
     background-repeat: no-repeat;
     background-size: 62%;
     border-color: #52dec5;
@@ -109,7 +109,7 @@ body {
     text-indent: -999px;
     background-position: 21px 28px;
     background-size: 40%;
-    background-image: url(../Nikita_Bandurin/img/select-all.png);
+    background-image: url(./img/select-all.png);
     background-repeat: no-repeat;
 }
 
@@ -158,7 +158,7 @@ li {
     margin: -999px 0px 0 0px;
     padding: 0;
     text-indent: -999px;
-    background-image: url(..//Nikita_Bandurin/img/close.png);
+    background-image: url(./img/close.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
