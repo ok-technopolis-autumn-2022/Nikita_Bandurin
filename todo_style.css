@@ -26,15 +26,13 @@ body {
     left: 2px;
     right: 2px;
     height: 5px;
-    /* z-index: -1; */
     bottom: -5px;
 }
 
 .todo-app__frame:after {
     left: 4px;
     right: 4px;
-    height: 10px;
-    /* z-index: -2; */
+    height: 5px;
     bottom: -10px;
 }
 .todo-app {
