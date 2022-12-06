@@ -38,22 +38,21 @@ body {
     left: 116px;
 } */
 
-.todo-app:after, .todo-app:before {
+.todo-app__frame:after, .todo-app__frame:before {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,.2);
     content: "";
     
 }
 
-.todo-app:before {
+.todo-app__frame:before {
     left: 2px;
     right: 2px;
     height: 5px;
     z-index: -1;
-    top: 74.4%;
 }
 
-.todo-app:after {
+.todo-app__frame:after {
     left: 4px;
     right: 4px;
     height: 10px;
