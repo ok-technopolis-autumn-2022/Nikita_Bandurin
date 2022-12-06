@@ -12,8 +12,53 @@ body {
     height: 100%;
     align-items: center;
     justify-content: center;
+    margin: 0;
 }
 
+/* .todo-app:after, .todo-app:before {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    content: "";
+    position: absolute;
+    top: 74.4%;
+}
+
+.todo-app:after {
+    width: 67%;
+    height: 10px;
+    z-index: -2;
+    left: 116px;
+}
+
+.todo-app:before {
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    width: 68%;
+    height: 5px;
+    z-index: -1;
+    left: 116px;
+} */
+
+.todo-app:after, .todo-app:before {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    content: "";
+    
+}
+
+.todo-app:before {
+    left: 2px;
+    right: 2px;
+    height: 5px;
+    z-index: -1;
+    top: 74.4%;
+}
+
+.todo-app:after {
+    left: 4px;
+    right: 4px;
+    height: 10px;
+    z-index: -2;
+}
 .todo-app {
     width: 70%;
     max-width: 560px;
@@ -44,6 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 1.4px  #f2f2f2 solid ;
+    /* border-bottom: 0; */
 }
 
 .todo-app__main-controls {
