@@ -27,7 +27,6 @@ body {
     left: 2px;
     right: 2px;
     height: 5px;
-    z-index: -1;
 }
 
 .todo-app__frame:after {
@@ -56,6 +55,10 @@ body {
 
 .header-title {
     margin: 0;
+    color: #ccc;
+    font-weight: 100;
+    font-size: 100px;
+    text-transform: lowercase;
 }
 
 
@@ -66,8 +69,9 @@ body {
     display: flex;
     flex-direction: column;
     border: 1.4px  #f2f2f2 solid ;
-    /* border-bottom: 0; */
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
     position: relative;
+    border: 0;
 }
 
 .todo-app__main-controls {
