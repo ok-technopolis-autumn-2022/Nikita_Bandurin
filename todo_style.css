@@ -13,7 +13,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    color: #666;
 }
 
 .todo-app__frame:after, .todo-app__frame:before {
@@ -188,7 +187,6 @@ li {
     height: 36px;
     margin: -999px 0px 0 0px;
     padding: 0;
-    text-indent: -999px;
     background-image: url(./img/close.png);
     background-repeat: no-repeat;
     background-size: 50%;
