@@ -15,34 +15,12 @@ body {
     margin: 0;
 }
 
-/* .todo-app:after, .todo-app:before {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,.2);
-    content: "";
-    position: absolute;
-    top: 74.4%;
-}
-
-.todo-app:after {
-    width: 67%;
-    height: 10px;
-    z-index: -2;
-    left: 116px;
-}
-
-.todo-app:before {
-    box-shadow: 0 2px 4px rgba(0,0,0,.2);
-    width: 68%;
-    height: 5px;
-    z-index: -1;
-    left: 116px;
-} */
-
 .todo-app__frame:after, .todo-app__frame:before {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,.2);
     content: "";
-    
+    position: absolute;
+    top: 100%;
 }
 
 .todo-app__frame:before {
