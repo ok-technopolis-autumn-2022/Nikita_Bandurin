@@ -90,6 +90,7 @@ body {
     flex-direction: column;
     border: 1.4px  #f2f2f2 solid ;
     /* border-bottom: 0; */
+    position: relative;
 }
 
 .todo-app__main-controls {
