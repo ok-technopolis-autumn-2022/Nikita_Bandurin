@@ -170,15 +170,12 @@ li {
     align-items: center;
 }
 
-.task-item__status {
-    flex-grow: 1;
-}
-
 .task-item__text {
     flex-grow: 1;
     font-size: 23px;
     padding-top: 5px;
     padding-bottom: 5px;
+    overflow: hidden;
 }
 
 .task-item__delete {
