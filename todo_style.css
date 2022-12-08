@@ -111,7 +111,7 @@ body {
     flex-shrink: 0;
     width: 30px;
     height: 30px;
-    margin: 0 0 0 -70px;
+    margin: 0 0 0 -100px;
 }
 
 .task-item__status-icon {
@@ -194,10 +194,14 @@ li {
 }
 
 .button-low-filters-bar {
-    /* display: none; */
     height: 0;
     margin-left: -30px;
     width: 30px;
+}
+
+.task-item-filter {
+    overflow: hidden;
+    padding: 8px;
 }
 
 .filter-task-text {
