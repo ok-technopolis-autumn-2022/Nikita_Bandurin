@@ -184,7 +184,7 @@ li {
 .task-item__delete {
     width: 36px;
     height: 36px;
-    margin: -999px 0px 0 0px;
+    margin: -9999px 0px 0 0px;
     padding: 0;
     background-image: url(./img/close.png);
     background-repeat: no-repeat;
