@@ -1,0 +1,244 @@
+ /*заняли полную высоту для html */
+ html {
+    height: 100%;
+} 
+
+
+/* заняли полную высоту для body, унаследовав ее от html */
+body {
+    background-color: #f2f2f2;
+    font-family: Roboto, Arial, sans-serif;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.todo-app__frame:after, .todo-app__frame:before {
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    content: "";
+    position: absolute;
+    /* top: 100%; */
+}
+
+.todo-app__frame:before {
+    left: 2px;
+    right: 2px;
+    height: 5px;
+    bottom: -5px;
+}
+
+.todo-app__frame:after {
+    left: 4px;
+    right: 4px;
+    height: 5px;
+    bottom: -10px;
+}
+.todo-app {
+    width: 70%;
+    max-width: 560px;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-app__header {
+    width: auto;
+    font-size: 20px;
+    text-transform: lowercase;
+    text-align: center;
+    margin: 0;
+}
+
+.header-title {
+    margin: 0;
+    color: #ccc;
+    font-weight: 100;
+    font-size: 100px;
+    text-transform: lowercase;
+}
+
+
+
+.todo-app__frame {
+    background-color: #fff;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 1px  #f2f2f2 solid ;
+    box-shadow: 0 2px 4px rgba(0,0,0,.2);
+    position: relative;
+    border: 0;
+}
+
+.todo-app__main-controls {
+    min-height: 64px;
+    flex-grow: 2;
+    display: flex;
+    border-bottom: 1.4px  #f2f2f2 solid ;
+    flex-direction: row;
+}
+
+.text_new_task {
+    font-size: 23px;
+}
+.todo-app__tasks {
+    flex-grow: 10;
+    height: 100%;
+}
+
+.todo-app__lower-actions-bar {
+    flex-grow: 1;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.task-item__status:checked+.task-item__status-icon {
+    background-image: url(./img/completed.png);
+    background-repeat: no-repeat;
+    background-size: 62%;
+    border-color: #52dec5;
+    background-position: 7px 8px;
+}
+
+.task-item__status {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 -70px;
+}
+
+.task-item__status-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    margin: 0 12px 0 70px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.show_hide_tasks, .text_new_task {
+    margin: 0;
+    border: 0;
+    background-color: #fff;
+}
+
+.show_hide_tasks {
+    height: 64px;
+    width: 70px;
+    text-indent: -999px;
+    background-position: 21px 28px;
+    background-size: 40%;
+    background-image: url(./img/select-all.png);
+    background-repeat: no-repeat;
+}
+
+.text_new_task {
+    width: 100%;
+}
+
+.task-item__view:hover {
+    background-color: #fafafa;
+    }
+
+.todo-app__tasks-list {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-height: 264px;
+    overflow: scroll;
+}
+
+li {
+    min-height: 64px;
+    border-bottom: 1.4px  #f2f2f2 solid ;
+}
+
+.task-item__view {
+    min-height: 64px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.task-item__text {
+    flex-grow: 1;
+    font-size: 23px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.task-item__delete {
+    width: 36px;
+    height: 36px;
+    margin: -9999px 0px 0 0px;
+    padding: 0;
+    background-image: url(./img/close.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.task-item__delete:focus, .task-item__view:hover .task-item__delete {
+    margin-top: 0;
+}
+
+.button-low-filters-bar {
+    height: 0;
+    margin-left: -30px;
+    width: 30px;
+}
+
+.task-item-filter {
+    overflow: hidden;
+    padding: 8px;
+}
+
+.filter-task-text {
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.button-low-filters-bar:checked + .filter-task-text {
+    border-color: #ebdfdf;
+}
+
+.todo-app__clear-button {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-right: 4px;
+    background-color: #fff;
+    color: #888;
+}
+
+.text_amount_left_tasks {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-left: 4px;
+    color: #888;
+}
+
+.todo-app__filters-bar {
+    margin: 0;
+    border: 0;
+    color: #888;
+    display: flex;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
